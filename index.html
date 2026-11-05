@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Football Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>FOOTBALL GAME</h1>
+
+    <div class="scoreboard">
+      <div>PLAYER 1</div>
+      <h2><span id="score1">0</span> - <span id="score2">0</span></h2>
+      <div>PLAYER 2</div>
+    </div>
+
+    <h2 id="message">GAME START!</h2>
+
+    <div class="field" id="field">
+      <div class="center-line"></div>
+      <div class="center-circle"></div>
+      <div class="center-dot"></div>
+
+      <div class="penalty left"></div>
+      <div class="penalty right"></div>
+
+      <div class="goal left-goal"></div>
+      <div class="goal right-goal"></div>
+
+      <img src="player1.png" class="player" id="player1" />
+
+      <img src="player2.png" class="player" id="player2" />
+
+      <img src="ball.png" class="ball" id="ball" />
+    </div>
+
+    <div class="controls">
+      <p>PLAYER 1: W A S D</p>
+      <p>PLAYER 2: ↑ ↓ ← →</p>
+    </div>
+
+    <button id="restart">RESTART GAME</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

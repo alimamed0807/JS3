@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+    color: white;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    font-family: Arial;
+}
+
+h1 {
+    letter-spacing: 3px;
+}
+
+.scoreboard {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.scoreboard h2 {
+    font-size: 35px;
+}
+
+#message {
+    color: yellow;
+    height: 25px;
+    font-size: 18px;
+}
+
+.field {
+    width: 900px;
+    height: 500px;
+    background: green;
+    border: 4px solid white;
+    position: relative;
+    overflow: hidden;
+}
+
+.center-line {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    border-left: 2px solid white;
+}
+
+.center-circle {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border: 2px solid white;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.penalty {
+    position: absolute;
+    width: 120px;
+    height: 220px;
+    border: 2px solid white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.goal {
+    position: absolute;
+    width: 35px;
+    height: 110px;
+    border: 3px solid white;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffffff22;
+}
+
+.left-goal {
+    left: 0;
+    border-left: none;
+}
+
+.right-goal {
+    right: 0;
+    border-right: none;
+}
+
+.player {
+    position: absolute;
+    width: 55px;
+    height: 75px;
+    object-fit: contain;
+    z-index: 2;
+}
+
+.ball {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    z-index: 3;
+}
+
+.controls {
+    display: flex;
+    gap: 40px;
+}
+
+button {
+    padding: 10px 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
